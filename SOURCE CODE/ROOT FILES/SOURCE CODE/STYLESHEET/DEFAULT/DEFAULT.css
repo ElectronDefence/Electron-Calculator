@@ -1,0 +1,241 @@
+html, body {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: silver;
+  color: #fff;
+  margin: 0 0 0 0;
+  overflow: hidden;
+}
+html #TitleContainer, body #TitleContainer {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 0 0 0 0;
+  float: left;
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+}
+html #TitleContainer #AppIcon, body #TitleContainer #AppIcon {
+  color: #fff;
+  margin: 20px 0 0 10px;
+  float: left;
+}
+html #TitleContainer #TitleText, body #TitleContainer #TitleText {
+  font-size: 20px;
+  cursor: default;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 8px 0 0 15px;
+  float: left;
+}
+html #TitleContainer #CloseInput, body #TitleContainer #CloseInput {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #ff0000;
+  color: #fff;
+  margin: 5px 5px 0 0;
+  float: right;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+}
+html #TitleContainer #CloseInput:hover, body #TitleContainer #CloseInput:hover {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #cc0000;
+  color: #fff;
+  margin: 5px 5px 0 0;
+  float: right;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+}
+html #TitleContainer #CloseInput:active, body #TitleContainer #CloseInput:active {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #fdfbfb;
+  color: #fff;
+  margin: 5px 5px 0 0;
+  float: right;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+}
+html #Calc-Input, body #Calc-Input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 3px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+}
+html #Calc-InputA, body #Calc-InputA {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 68px;
+  min-width: 68px;
+  max-width: 68px;
+  height: 42px;
+  min-height: 42px;
+  max-height: 42px;
+}
+html #Calc-Input1, html #Calc-Input2, html #Calc-Input3, html #Calc-Input4, html #Calc-Input5, html #Calc-Input6, html #Calc-Input7, html #Calc-Input8, html #Calc-Input9, html #Calc-Input0, html #Calc-InputPlus, html #Calc-InputDivide, html #Calc-InputCircle, html #Calc-InputEquals, html #Calc-InputMinus, html #Calc-InputXmark, body #Calc-Input1, body #Calc-Input2, body #Calc-Input3, body #Calc-Input4, body #Calc-Input5, body #Calc-Input6, body #Calc-Input7, body #Calc-Input8, body #Calc-Input9, body #Calc-Input0, body #Calc-InputPlus, body #Calc-InputDivide, body #Calc-InputCircle, body #Calc-InputEquals, body #Calc-InputMinus, body #Calc-InputXmark {
+  margin: 30px 0 0 30px;
+  float: left;
+  color: #fff;
+}
+html #Button1, body #Button1 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button2, html #Button3, html #Button4, body #Button2, body #Button3, body #Button4 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button5, body #Button5 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button6, html #Button7, html #Button8, body #Button6, body #Button7, body #Button8 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button9, body #Button9 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button10, html #Button11, html #Button12, body #Button10, body #Button11, body #Button12 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button13, body #Button13 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+html #Button14, html #Button15, html #Button16, body #Button14, body #Button15, body #Button16 {
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  width: 85px;
+  min-width: 85px;
+  max-width: 85px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}/*# sourceMappingURL=DEFAULT.css.map */

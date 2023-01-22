@@ -1,0 +1,35 @@
+{
+
+    "main": "DEFAULT.html",
+    "name": "nwjs-calc",
+    "description": "NWJS ELECTRON CALCULATOR",
+    "version": "00.00.00",
+    "keywords": [ "ELECTRON CALCULATOR", "ELECTRON DEFENCE" ],
+
+    "window": {
+
+        "title": "ELECTRON CALCULATOR",
+        "icon": "CALCULATOR.png",
+
+        "frame": false,
+        "toolbar": true,
+        "transparent": true,
+        "position": "center",
+
+        "height": 380,
+        "min_height": 380,
+        "max_height": 380,
+
+        "width": 400,
+        "min_width": 400,
+        "max_width": 400
+
+    },
+
+    "webkit": {
+
+      "plugin": true
+
+    }
+
+  }
