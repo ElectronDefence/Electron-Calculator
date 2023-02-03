@@ -16,13 +16,13 @@
         "transparent": true,
         "position": "center",
 
-        "height": 380,
-        "min_height": 380,
-        "max_height": 380,
+        "height": 504,
+        "min_height": 504,
+        "max_height": 504,
 
-        "width": 400,
-        "min_width": 400,
-        "max_width": 400
+        "width": 404,
+        "min_width": 404,
+        "max_width": 404
 
     },
 

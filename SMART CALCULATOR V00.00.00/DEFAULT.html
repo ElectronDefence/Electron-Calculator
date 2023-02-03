@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="En-US">
+    <head>
+        <title> Electron Calculator </title>
+
+        <!-- font-family: 'Koulen', cursive -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">     
+
+        <!-- font-family: 'Inconsolata', monospace -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Bebas Neue', cursive -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="ROOT FILES/SOURCE CODE/STYLESHEET/DEFAULT.css"  />
+        <link rel="stylesheet" type="text/css" href="ROOT FILES/SOURCE CODE/STYLESHEET/DEFAULT.css"  />
+        <link rel="stylesheet" type="text/css" href="ROOT FILES/SOURCE CODE/STYLESHEET/DEFAULT.css"  />
+        <link rel="stylesheet" type="text/css" href="ROOT FILES/SOURCE CODE/STYLESHEET/TITLEBAR.css" />
+
+        <script type="text/javascript" src="ROOT FILES/GLOBAL ASSETS/VUEJS/vue.3.2.45.global.js"></script>
+        <script type="text/javascript" src="ROOT FILES/GLOBAL ASSETS/VUEJS/vue.3.2.45.global.js"></script>
+        <script type="text/javascript" src="ROOT FILES/GLOBAL ASSETS/VUEJS/vue.3.2.45.global.js"></script>
+        <script type="text/javascript" src="ROOT FILES/GLOBAL ASSETS/VUEJS/vue.3.2.45.global.js"></script>
+
+        <style>
+            .Version {
+              position: relative;
+              display: inline-block;
+              border-bottom: 1px dotted black;
+            }
+            
+            .Version .VToolTip {
+              visibility: hidden;
+              width: 80px;
+              user-select: none;
+              cursor: default;
+              margin: 7px 0 0 10px;
+              font-family: 'Inconsolata', monospace;
+              background-color: rgb(120, 120, 120);
+              color: #fff;
+              text-align: center;
+              border-radius: 4px;
+              padding: 5px 0;
+              font-size: 15px;
+              
+            
+              /* Position the tooltip */
+              position: absolute;
+              z-index: 1;
+            }
+            
+            .Version:hover .VToolTip {
+              visibility: visible;
+            }
+        </style> 
+    </head>
+    <body lang="En-US">
+        <window name="WindowContainer" id="WindowContainer" class="WindowContainer">
+            <titlebar name="TitlebarContainer" id="TitlebarContainer" class="TitlebarContainer">
+                <div name="Version" id="Version" class="Version">
+                    <span name="TitleSpan" id="TitleSpan" class="TitleSpan"> Smart Calculator </span>
+                    <span mame="VToolTip" id="VToolTip" class="VToolTip"> 00.00.00 </span>
+                </div>
+                <!--<span name="TitleVersion" id="TitleVersion" class="TitleVersion"> v00.00.00 </span>-->
+
+                <input type="button" value="" name="CloseBTN" id="CloseBTN" class="CloseBTN" onclick="CloseWindow()" />
+                <input type="button" value="" name="MinimizeBTN" id="MinimizeBTN" class="MinimizeBTN" onclick="win.minimize()" />
+            </titlebar>
+
+            <form name="MainContainer" id="MainContainer" class="MainContainer">
+                <input type="text" placeholder="" name="AnswerInput" id="AnswerInput" class="AnswerInput" />
+                <input type="button" value="Clear" name="AnswerClear" id="AnswerClear" class="AnswerClear" onclick="ClearAnswer()" />
+
+                <br>
+
+                <input type="button" value="1" name="CalcButton1" id="CalcButton1" class="CalcButton1" onclick="MainContainer.AnswerInput.value +='1'" />
+                
+                <input type="button" value="2" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='2'" />
+                <input type="button" value="3" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='3'" />
+                <input type="button" value="+" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='+'" />
+
+                <input type="button" value="4" name="CalcButton1" id="CalcButton1" class="CalcButton1" onclick="MainContainer.AnswerInput.value +='4'" />
+                
+                <input type="button" value="5" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='5'" />
+                <input type="button" value="6" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='6'" />
+                <input type="button" value="-" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='-'" />
+
+                <input type="button" value="7" name="CalcButton1" id="CalcButton1" class="CalcButton1" onclick="MainContainer.AnswerInput.value +='7'" />
+                
+                <input type="button" value="8" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='8'" />
+                <input type="button" value="9" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='9'" />
+                <input type="button" value="X" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='*'" />
+
+                <input type="button" value="/" name="CalcButton1" id="CalcButton1" class="CalcButton1" onclick="MainContainer.AnswerInput.value +='/'" />
+                
+                <input type="button" value="0" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='0'" />
+                <input type="button" value="." name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value +='.'" />
+                <input type="button" value="=" name="CalcButton2" id="CalcButton2" class="CalcButton2" onclick="MainContainer.AnswerInput.value = eval(MainContainer.AnswerInput.value)" />
+            </form>
+        </window>
+        
+
+        <script type="text/javascript" src="ROOT FILES/SOURCE CODE/JAVASCRIPT/DEFAULT.js"></script>
+        <script type="text/javascript" src="ROOT FILES/SOURCE CODE/JAVASCRIPT/DEFAULT.js"></script>
+        <script type="text/javascript" src="ROOT FILES/SOURCE CODE/JAVASCRIPT/DEFAULT.js"></script>
+        <script type="text/javascript" src="ROOT FILES/SOURCE CODE/JAVASCRIPT/DEFAULT.js"></script>
+    </body>
+</html>

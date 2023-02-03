@@ -1,0 +1,428 @@
+body
+    border: none
+    outline: none
+    background-color: transparent
+    color: #000
+    margin: 0 0 0 0
+    overflow: hidden
+
+#WindowContainer
+    border: none
+    outline: none
+    border: 2px solid #222
+    border-radius: 5px
+    background-color: transparent
+    color: #fff
+    margin: 0 0 0 0
+    float: left
+        
+    width: 400px
+    min-width: 400px
+    max-width: 400px
+
+    height: 500px
+    min-height: 500px
+    max-height: 500px
+
+    #TitlebarContainer
+        border: none
+        outline: none
+        border-radius: 4px 4px 0 0
+        background-color: #222
+        color: #fff
+        margin: 0 0 0 0
+        float: left
+        
+        width: 400px
+        min-width: 400px
+        max-width: 400px
+
+        height: 40px
+        min-height: 40px
+        max-height: 40px
+
+
+        #TitleSpan
+            font-size: 25px
+            font-weight: 400
+            cursor: default
+            user-select: none
+            font-family: 'Bebas Neue', cursive
+            margin: 5px 0 0 10px
+            float: left
+            color: #fff
+        
+        //#TitleVersion
+        //    font-size: 18px
+        //    font-weight: 400
+        //    font-family: 'Bebas Neue', cursive
+        //    margin: 12px 0 0 10px
+        //    float: left
+        //    color: #fff
+
+        #CloseBTN
+            border: none
+            outline: none
+            border-radius: 4px
+            background-color: #ff0000
+            color: #fff
+            margin: 5px 5px 0 0
+            float: right
+            
+            width: 30px
+            min-width: 30px
+            max-width: 30px
+
+            height: 30px
+            min-height: 30px
+            max-height: 30px
+
+        #CloseBTN:hover
+            border: none
+            outline: none
+            border-radius: 4px
+            background-color: #c91c1c
+            color: #fff
+            margin: 5px 5px 0 0
+            float: right
+            
+            width: 30px
+            min-width: 30px
+            max-width: 30px
+
+            height: 30px
+            min-height: 30px
+            max-height: 30px
+
+        #CloseBTN:active
+            border: none
+            outline: none
+            border-radius: 4px
+            background-color: #fcfcfc
+            color: #fff
+            margin: 5px 5px 0 0
+            float: right
+            
+            width: 30px
+            min-width: 30px
+            max-width: 30px
+
+            height: 30px
+            min-height: 30px
+            max-height: 30px
+
+        #MinimizeBTN
+            border: none
+            outline: none
+            border-radius: 4px
+            background-color: #ffb700
+            color: #fff
+            margin: 5px 5px 0 0
+            float: right
+            
+            width: 30px
+            min-width: 30px
+            max-width: 30px
+
+            height: 30px
+            min-height: 30px
+            max-height: 30px
+
+        #MinimizeBTN:hover
+            border: none
+            outline: none
+            border-radius: 4px
+            background-color: #e5a400
+            color: #fff
+            margin: 5px 5px 0 0
+            float: right
+            
+            width: 30px
+            min-width: 30px
+            max-width: 30px
+
+            height: 30px
+            min-height: 30px
+            max-height: 30px
+
+        #MinimizeBTN:active
+            border: none
+            outline: none
+            border-radius: 4px
+            background-color: #fcfcfc
+            color: #fff
+            margin: 5px 5px 0 0
+            float: right
+            
+            width: 30px
+            min-width: 30px
+            max-width: 30px
+
+            height: 30px
+            min-height: 30px
+            max-height: 30px
+
+    #MainContainer
+        border: none
+        outline: none
+        border-radius: 0 0 4px 4px
+        background-color: white
+        color: #fff
+        margin: 0 0 0 0
+        float: left
+        
+        width: 400px
+        min-width: 400px
+        max-width: 400px
+
+        height: 460px
+        min-height: 460px
+        max-height: 460px
+
+        #AnswerInput
+            outline: none
+            font-size: 20px
+            font-weight: 200
+            padding-left: 10px
+            border-radius: 4px
+            border: 2px solid #222
+            text-transform: uppercase
+            font-family: 'Inconsolata', monospace
+            background-color: #fff
+            color: #000
+            margin: 15px 0 0 10px
+            float: left
+
+            width: 286px
+            min-width: 286px
+            max-width: 286px
+
+            height: 36px
+            min-height: 36px
+            max-height: 36px
+
+        #AnswerInput:hover
+            border: none
+            outline: none
+            font-size: 20px
+            font-weight: 200
+            padding-left: 10px
+            border-radius: 4px
+            text-transform: uppercase
+            font-family: 'Inconsolata', monospace
+            background-color: #444
+            color: #fff
+            margin: 15px 0 0 10px
+            float: left
+
+            width: 290px
+            min-width: 290px
+            max-width: 290px
+
+            height: 40px
+            min-height: 40px
+            max-height: 40px
+
+        #AnswerInput:active
+            outline: none
+            font-size: 20px
+            font-weight: 200
+            padding-left: 10px
+            border-radius: 4px
+            border: 2px solid #222
+            text-transform: uppercase
+            font-family: 'Inconsolata', monospace
+            background-color: #fff
+            color: #fff
+            margin: 15px 0 0 10px
+            float: left
+
+            width: 286px
+            min-width: 286px
+            max-width: 286px
+
+            height: 36px
+            min-height: 36px
+            max-height: 36px
+
+        #AnswerClear
+            outline: none
+            cursor: pointer
+            font-size: 18px
+            font-weight: 800
+            border-radius: 4px
+            border: 3px solid #222
+            text-transform: uppercase
+            font-family: 'Inconsolata', monospace
+            background-color: #222
+            color: #fff
+            margin: 15px 0 0 10px
+            float: left
+
+            width: 68px
+            min-width: 68px
+            max-width: 68px
+
+            height: 41px
+            min-height: 41px
+            max-height: 41px
+
+            transition: .1s
+
+        #AnswerClear:hover
+            outline: none
+            cursor: pointer
+            font-size: 18px
+            font-weight: 800
+            border-radius: 4px
+            border: 3px solid #222
+            text-transform: uppercase
+            font-family: 'Inconsolata', monospace
+            background-color: #444
+            color: #fff
+            margin: 15px 0 0 10px
+            float: left
+
+            width: 68px
+            min-width: 68px
+            max-width: 68px
+
+            height: 41px
+            min-height: 41px
+            max-height: 41px
+
+            transition: .1s
+
+        #AnswerClear:active
+            outline: none
+            cursor: pointer
+            font-size: 19px
+            font-weight: 900
+            border-radius: 4px
+            border: 3px solid #222
+            text-transform: uppercase
+            font-family: 'Inconsolata', monospace
+            background-color: #fff
+            color: #222
+            margin: 15px 0 0 10px
+            float: left
+
+            width: 68px
+            min-width: 68px
+            max-width: 68px
+
+            height: 41px
+            min-height: 41px
+            max-height: 41px
+
+            transition: .1s
+    
+
+    #CalcButton1
+        outline: none
+        font-size: 30px
+        cursor: pointer
+        border-radius: 4px
+        font-family: 'Koulen', cursive
+        border: 3px solid #222
+        background-color: #222
+        color: #fff
+        margin: 18px 0 0 10px
+        float: left
+
+        width: 80px
+        min-width: 80px
+        max-width: 80px
+
+        height: 80px
+        min-height: 80px
+        max-height: 80px
+
+    #CalcButton1:hover
+        outline: none
+        border-radius: 4px
+        border: 3px solid #222
+        background-color: #444
+        color: #fff
+        margin: 18px 0 0 10px
+        float: left
+
+        width: 80px
+        min-width: 80px
+        max-width: 80px
+
+        height: 80px
+        min-height: 80px
+        max-height: 80px
+
+    #CalcButton1:active
+        outline: none
+        border-radius: 4px
+        border: 3px solid #222
+        background-color: #fff
+        color: #222
+        margin: 18px 0 0 10px
+        float: left
+
+        width: 80px
+        min-width: 80px
+        max-width: 80px
+
+        height: 80px
+        min-height: 80px
+        max-height: 80px
+
+    #CalcButton2
+        outline: none
+        font-size: 30px
+        cursor: pointer
+        border-radius: 4px
+        font-family: 'Koulen', cursive
+        border: 3px solid #222
+        background-color: #222
+        color: #fff
+        margin: 18px 0 0 20px
+        float: left
+
+        width: 80px
+        min-width: 80px
+        max-width: 80px
+
+        height: 80px
+        min-height: 80px
+        max-height: 80px
+
+    #CalcButton2:hover
+        outline: none
+        border-radius: 4px
+        border: 3px solid #222
+        background-color: #444
+        color: #fff
+        margin: 18px 0 0 20px
+        float: left
+
+        width: 80px
+        min-width: 80px
+        max-width: 80px
+
+        height: 80px
+        min-height: 80px
+        max-height: 80px
+
+    #CalcButton2:active
+        outline: none
+        border-radius: 4px
+        border: 3px solid #222
+        background-color: #fff
+        color: #222
+        margin: 18px 0 0 20px
+        float: left
+
+        width: 80px
+        min-width: 80px
+        max-width: 80px
+
+        height: 80px
+        min-height: 80px
+        max-height: 80px
+
